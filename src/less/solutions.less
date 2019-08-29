@@ -1,0 +1,110 @@
+@import "partials/params";
+@import "partials/mixins";
+
+#solutions {
+    padding: 50px 40px 70px;
+
+    & h1 {
+        margin-bottom: 60px;
+        font-size: 40px;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    & .row {
+        display: flex;
+        justify-content: space-around;
+
+        & .tile {
+            padding: 5px;
+            width: 25%;
+            position: relative;
+            border-radius: 5px;
+            background-color: @primary-color;
+
+            & .bestseller {
+                display: flex;
+                justify-content: center;
+                position: relative;
+
+                & > div {
+                    position: absolute;
+                    background-color: @primary-color;
+                }
+
+                & .left {
+                    width: 30px;
+                    height: 27px;
+                    left: 39px;
+                    top: -17px;
+                    transform: rotate(45deg);
+                }
+
+                & .text {
+                    padding: 6px 30px 0;
+                    font-size: 13px;
+                    font-weight: bold;
+                    color: @red-color;
+                    text-transform: uppercase;
+                    top: -24px;
+                }
+
+                & .right {
+                    height: 26px;
+                    width: 30px;
+                    transform: rotate(45deg);
+                    right: 36px;
+                    top: -17px;
+                }
+            }
+
+            & .header {
+                padding: 30px;
+
+                & h3 {
+                    font-size: 25px;
+                    font-weight: normal;
+                }
+            }
+
+            & .content {
+                margin-bottom: 10px;
+                padding: 15px;
+                min-height: 200px;
+                position: relative;
+                background-color: #fff;
+
+                & ul { 
+                    .clean;
+                    padding: 10px 0 0 30px;
+                    list-style-image: url('img/checkbox.png');
+                    & li {
+                        padding-left: 10px;
+                        font-size: 13px;
+                        font-weight: bold;
+                        & span {
+                            position: relative;
+                            top: -7px;
+                        }
+                    }
+                }
+
+                & .cost {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    font-size: 50px;
+                    position: absolute;
+                    bottom: 10px;
+                    right: 5px;
+                }
+            }
+
+            & .footer {
+                margin-bottom: 5px;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+}
