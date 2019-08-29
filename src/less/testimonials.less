@@ -1,0 +1,65 @@
+@import "partials/params";
+@import "partials/mixins";
+
+#testimonials {
+    min-height: 767px;
+    background: url("img/footer_bg.jpg") no-repeat;
+    background-size: cover;
+    
+    & .contant {
+        padding: 20px;
+        width: 50%;
+
+        & h1 {
+            margin-bottom: 20px;
+            font-size: 40px;
+            font-weight: normal;
+            letter-spacing: 2px;
+        }
+
+        & .author {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: center;
+
+            & img {
+                margin-bottom: 5px;
+            }
+
+            & > div {
+                margin-left: 30px;
+                text-align: center;
+            }
+
+        }
+
+        & .text {
+            margin-bottom: 30px;
+
+            & p {
+                margin-bottom: 10px;
+                font-size: 13px;
+                font-weight: bold;
+                line-height: 1.5;
+            }
+        }
+
+        & .next {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 100px;
+
+            & span {
+                cursor: pointer;
+            }
+
+            & i {
+                margin-left: 10px;
+            }
+        }
+
+        & .button {
+            text-align: center;
+        }
+    }
+}
